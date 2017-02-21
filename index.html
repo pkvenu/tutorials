@@ -1,0 +1,111 @@
+---
+layout: default
+title: Tutorials
+description:
+image:
+---
+
+{% include header.html %}
+
+<div class="container ">
+    <div class="row" id="main-content">
+        <div class="col-md-8">
+            <div id="posts">
+                    <div class="blog-list-container" id="all-container">
+                        <ul class="blog-list">
+                            {% assign sorted_tutorials = site.posts | sort: 'title' %}
+                            {% for post in sorted_tutorials %}
+                            <div class="row" id="posts">
+                                <div>
+                                    <h3><a href="{{post.tutorial_url_default}}">{{ post.title }}</a></h3>
+                                </div>
+                                <div class="row">
+                                    <div class="description">
+                                        <p>{{ post.content }}</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="lang">
+                                        {% for lang in post.langauge %}
+                                        <li>
+                                            <a href="{{lang.tutorial_uri}}" class="btn btn-default" role="button">{{lang.name}}</a>
+                                        </li>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                    <!-- Reference: http://www.jokecamp.com/blog/listing-jekyll-posts-by-tag/ -->
+                    {% for tag in site.tags %}
+                    {% assign t = tag | first %}
+                    {% assign posts = tag | last %}
+                    <div class="blog-list-container hidden" id="{{ t }}-container">
+                        <ul class="blog-list">
+                            {% for post in posts %}
+                            {% if post.tags contains t %}
+                            <div class="row" id="posts">
+                                <div>
+                                    <h3><a href="{{post.tutorial_url_default}}">{{ post.title }}</a></h3>
+                                </div>
+                                <div class="row">
+                                    <div class="description">
+                                        <p>{{ post.content }}</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="lang">
+                                        {% for lang in post.langauge %}
+                                        <li>
+                                            <a href="{{lang.tutorial_uri}}" class="btn btn-default" role="button">{{lang.name}}</a>
+                                        </li>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+                        </ul>
+
+                        <!--{% assign numPosts = posts | size %}-->
+                        <!--{% if numPosts == 1 %}-->
+                        <!--<p>{{ posts | size }} post containing tag <b>{{ t }}</b></p>-->
+                        <!--{% else %}-->
+                        <!--<p>{{ posts | size }} posts containing tag <b>{{ t }}</b></p>-->
+                        <!--{% endif %}-->
+                    </div>
+                    {% endfor %}
+                </div>
+        </div>
+        <div class="col-md-4">
+            <div class="well">
+                <h4>Tags</h4>
+                <ul class="blog-tags-list">
+                    {% assign sorted_tags = site.tags | sort %}
+                    {% for tag in sorted_tags %}
+                    {% assign t = tag | first %}
+                    {% assign posts = tag | last %}
+                    <li class="blog-tag-item" id="{{ t }}-item">
+                        <a href onclick="filter('{{ t }}'); return false;">{{ t }}<span class="badge">{{ posts | size }}</span></a>
+                    </li>
+                    {% endfor %}
+                </ul>
+
+                <p>
+                    <a href onclick="filter('all'); return false;">Show all tutorials</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer class="">
+        {% include footer.html %}
+    </footer>
+</div>
+<!-- Footer -->
+
+
+
+
+

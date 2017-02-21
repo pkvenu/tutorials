@@ -5,9 +5,9 @@ Error: Invalid CSS after "": expected selector, was "---"
 1: ---
 2: ---
 3: 
-4: body {
-5:   padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. *\/
-6: }
+4: 
+5: body {
+6:   padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. *\/
 
 Backtrace:
 main.scss:1
@@ -53,4 +53,4 @@ main.scss:1
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"\": expected selector, was \"---\"\A         on line 1 of main.scss\A \A 1: ---\A 2: ---\A 3: \A 4: body {\A 5:   padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */\A 6: }"; }
+  content: "Error: Invalid CSS after \"\": expected selector, was \"---\"\A         on line 1 of main.scss\A \A 1: ---\A 2: ---\A 3: \A 4: \A 5: body {\A 6:   padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */"; }

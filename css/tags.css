@@ -5,9 +5,9 @@ Error: Invalid CSS after "": expected selector, was "---"
 1: ---
 2: ---
 3: 
-4:   /* tags *\/
-5: 
-6: .blog-tags-list li:hover span{
+4: .blog-tags-list li:hover span{
+5:   width:20px;
+6:   color: #FFF;
 
 Backtrace:
 tags.scss:1
@@ -53,4 +53,4 @@ tags.scss:1
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"\": expected selector, was \"---\"\A         on line 1 of tags.scss\A \A 1: ---\A 2: ---\A 3: \A 4:   /* tags */\A 5: \A 6: .blog-tags-list li:hover span{"; }
+  content: "Error: Invalid CSS after \"\": expected selector, was \"---\"\A         on line 1 of tags.scss\A \A 1: ---\A 2: ---\A 3: \A 4: .blog-tags-list li:hover span{\A 5:   width:20px;\A 6:   color: #FFF;"; }

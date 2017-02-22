@@ -1,56 +1,240 @@
-/*
-Error: Invalid CSS after "": expected selector, was "---"
-        on line 1 of main.scss
+body {
+  padding-top: 50px;
+  /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */ }
 
-1: ---
-2: ---
-3: 
-4: 
-5: body {
-6:   padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. *\/
+.navbar-header {
+  padding-left: 15px; }
 
-Backtrace:
-main.scss:1
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1117:in `expr!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/static_parser.rb:20:in `parse_selector'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:427:in `visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin.rb:82:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/bin/scss:13:in `<top (required)>'
-/usr/local/bin/scss:23:in `load'
-/usr/local/bin/scss:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"\": expected selector, was \"---\"\A         on line 1 of main.scss\A \A 1: ---\A 2: ---\A 3: \A 4: \A 5: body {\A 6:   padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */"; }
+.pre-scrollable {
+  max-height: 420px;
+  overflow-y: scroll; }
+
+.lang li {
+  display: inline-block;
+  margin-left: 15px; }
+
+.description {
+  margin-left: 15px;
+  margin-right: 15px; }
+
+.container {
+  margin-left: 0px;
+  padding-left: 0px; }
+
+#main-content {
+  margin-bottom: 130px; }
+
+.blog-list {
+  padding: 0;
+  list-style-type: none;
+  margin-left: 30px; }
+
+.blog-list li {
+  padding-bottom: 5px; }
+
+.badge {
+  float: right;
+  margin-left: 5px;
+  background: #00b3ee; }
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+  color: #fff;
+  background-color: #FF9D2A;
+  border-color: #FF9D2A;
+  /*set the color you want here*/ }
+
+#posts.row + #posts.row {
+  content: "";
+  display: block;
+  border-top: 1px solid #ccc; }
+
+#posts.row {
+  margin-bottom: 10px; }
+
+.well {
+  margin-top: 15px; }
+
+/* footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 130px;
+  background: #303030;
+  color: #797979; }
+
+footer .footer-content {
+  width: 980px;
+  margin: 0 auto; }
+
+footer .footer-content .footer-content-row:first-child {
+  padding: 20px 0 10px; }
+
+footer .footer-content .footer-content-row.footer-content-row-last {
+  padding: 10px 0;
+  border-top: 1px solid #414141; }
+
+.layout-2-cols footer .footer-content .footer-content-row .footer-content-row-left {
+  width: 35%; }
+
+footer .footer-content .footer-content-row .footer-content-row-left .footer-logo a {
+  display: block;
+  padding-top: 18px;
+  width: 161px;
+  font-size: 11px;
+  color: #797979;
+  background: url("https://developers.ringcentral.com/assets/images/footer_rclogo.png?1487230240") no-repeat; }
+
+footer .footer-content .footer-content-row .footer-content-row-left .footer-logo a:hover {
+  text-decoration: underline; }
+
+footer .footer-content .footer-content-row .footer-content-row-left .footer-copyright {
+  font-size: 12px;
+  color: #797979; }
+
+footer .footer-content .footer-content-row .footer-content-row-right {
+  text-align: right; }
+
+.layout-2-cols footer .footer-content .footer-content-row .footer-content-row-right {
+  width: 65%; }
+
+footer .footer-content .footer-content-row .footer-content-row-right .footer-text-links {
+  height: 22px;
+  line-height: 22px;
+  font-size: 0; }
+
+footer .footer-content .footer-content-row .footer-content-row-right .footer-text-links li {
+  display: inline-block;
+  padding-left: 9px;
+  margin-left: 9px;
+  border-left: 1px solid #414141;
+  font-size: 11px; }
+
+footer .footer-content .footer-content-row .footer-content-row-right .footer-text-links li:first-child {
+  border-left: none; }
+
+footer .footer-content .footer-content-row .footer-content-row-right .footer-text-links li a {
+  color: #d6d6d6; }
+
+footer .footer-content .footer-content-row .footer-content-row-right .footer-text-links li a:hover {
+  text-decoration: underline; }
+
+footer .footer-content .footer-content-row .footer-content-row-right .footer-image-link {
+  display: inline-block; }
+
+footer .footer-content .footer-content-row .footer-content-row-right .footer-image-link a {
+  display: inline-block;
+  margin-left: 9px;
+  width: 27px;
+  height: 27px;
+  text-align: center;
+  background: #797979;
+  border-radius: 50%;
+  color: #333; }
+
+footer .footer-content .footer-content-row .footer-content-row-right .footer-image-link a:hover {
+  color: #fff; }
+
+footer .footer-content .footer-content-row .footer-content-row-right .footer-image-link i {
+  position: relative;
+  top: 2px;
+  font-size: 14px; }
+
+footer .footer-content .footer-content-row .footer-content-row-right .footer-image-link-facebook a:hover {
+  background: #3c599b; }
+
+footer .footer-content .footer-content-row .footer-content-row-right .footer-image-link-twitter i {
+  top: 3px; }
+
+footer .footer-content .footer-content-row .footer-content-row-right .footer-image-link-twitter a:hover {
+  background: #55acee; }
+
+footer .footer-content .footer-content-row .footer-content-row-right .footer-image-link-google-plus i {
+  top: 3px;
+  font-size: 16px; }
+
+footer .footer-content .footer-content-row .footer-content-row-right .footer-image-link-google-plus a:hover {
+  background: #d73d32; }
+
+footer .footer-content .footer-content-row .footer-content-row-right .footer-image-link-linkedin i {
+  top: 0;
+  font-size: 12px; }
+
+footer .footer-content .footer-content-row .footer-content-row-right .footer-image-link-linkedin a:hover {
+  background: #007bb6; }
+
+footer .footer-content .footer-content-row .footer-content-row-right .footer-image-link-youtube i {
+  font-size: 16px; }
+
+footer .footer-content .footer-content-row .footer-content-row-right .footer-image-link-youtube a:hover {
+  background: #cc181e; }
+
+.layout-2-cols {
+  font-size: 0; }
+
+.layout-2-cols > div {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%; }
+
+.layout-2-cols-float, .point-sections > div, .overview-pages .use-case-scenarios li {
+  overflow: hidden; }
+
+.layout-2-cols-float > div, .point-sections > div > div, .overview-pages .use-case-scenarios li > div {
+  overflow: hidden; }
+
+.layout-2-cols-float > div:first-child, .point-sections > div > div:first-child, .overview-pages .use-case-scenarios li > div:first-child {
+  float: left; }
+
+.regular-text, .article, .layout-2-cols > div {
+  font-size: 16px;
+  color: #585858;
+  line-height: 24px;
+  white-space: normal; }
+
+/*  end footer */
+/*  tags */
+.blog-tags-list li:hover span {
+  width: 20px;
+  color: #FFF; }
+
+.blog-tags-list {
+  padding: 0;
+  list-style-type: none; }
+
+.blog-tags-list li {
+  display: inline-block;
+  margin-bottom: 5px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  color: black;
+  padding: 3px;
+  text-decoration: none;
+  border: 1px solid lightgrey; }
+
+.blog-tags-list li > a {
+  display: block;
+  padding: 5px; }
+
+.blog-tags-list li > a:hover {
+  text-decoration: none; }
+
+.blog-tags-list li.active {
+  display: inline-block;
+  margin-bottom: 5px;
+  background-color: #ff8900;
+  border-radius: 5px; }
+
+.blog-tags-list li.active > a {
+  display: block;
+  color: white;
+  text-decoration: none; }
+
+.blog-item-date {
+  padding-right: 5px;
+  font-family: 'Inconsolata';
+  color: #999; }
+
+/*  end tags */
+
+/*# sourceMappingURL=main.css.map */
